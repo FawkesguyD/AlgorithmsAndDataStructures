@@ -6,9 +6,10 @@
 #include <bitset>
 using namespace std;
 
-class ex1_c
+class Ex1_C
 {
-public: void test() {
+public: static void test() {
+        cout << "Ex1.c | ";
         unsigned int x = 25;
         const int n = sizeof(int)*8;
         unsigned maska = (1 << (n - 1));
@@ -21,24 +22,26 @@ public: void test() {
     }
 };
 
-class ex1_b
+class Ex1_B
 {
 public:
     int number{};
     void test() {
-        cout << "enter number: ";
+        cout << "Ex1.b | ";
+        cout << "enter number(changing 7th bit of the digit to 1): ";
         cin >> number;
         number |= (1 << 6);
         cout << "modified number: " << number << endl;
     }
 };
 
-class ex1_a
+class Ex1_A
 {
 public:
     int number{};
     void test() {
-        cout << "enter number: ";
+        cout << "Ex1.a | ";
+        cout << "enter number(changing 5th bit of the digit to 0): ";
         cin >> number;
         number &= ~(1 << 4);
         cout << "modified number: " << number << endl;

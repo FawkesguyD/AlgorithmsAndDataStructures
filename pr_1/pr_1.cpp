@@ -7,33 +7,35 @@ int main() {
 
     cout << "enter task: ";
     cin >> task;
+    cout << endl;
 
     switch(task) {
         default:
             return 0;
         case 1: {
             // задание 1 | практика 1
-            ex1_a test1;
-            ex1_b test2;
-            ex1_c test3;
+            Ex1_A ex1_a;
+            Ex1_B ex1_b;
+            Ex1_C ex1_c;
 
-            test1.test();
-            test2.test();
-            test3.test();
+            ex1_a.test();
+            ex1_b.test();
+            ex1_c.test();
             return 0;
         }
         case 2: {
             // задание 2 | практика 1
-            ex2_a test4;
-            ex2_b test5;
-            ex2_c test6;
+            Ex2_A ex2_a;
+            Ex2_B ex2_b;
+            Ex2_C ex2_c;
 
-            test4.test();
-            test5.test();
-            test6.test();
+            ex2_a.test();
+            ex2_b.test();
+            ex2_c.test();
             return 0;
         }
         case 3: {
+            cout << "Ex3 |\n";
             // задание 1
             cout << "loading.." << endl;
             string inputFileName = "input.txt";
@@ -47,7 +49,7 @@ int main() {
 
             // задание 2
             size_t memory_usage = sorter.GetMemoryUsage();
-            cout << "Memory usage of the vector: " << memory_usage << " bytes." << endl;
+            cout << "Memory usage of the vector: " << memory_usage << "B(" << memory_usage * 0.0000010 << "MB) bytes." << endl;
             return 0;
         }
     }

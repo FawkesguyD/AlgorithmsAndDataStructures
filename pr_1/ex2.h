@@ -7,10 +7,11 @@
 #include <ctime>
 using namespace std;
 
-class ex2_a
+class Ex2_A
 {
 public:
     void test() {
+        cout << "Ex2.a Sorting(unique numbers)| ";
         // Инициализируем генератор случайных чисел
         srand(static_cast<unsigned int>(time(nullptr)));
 
@@ -54,10 +55,11 @@ public:
     }
 };
 
-class ex2_b
+class Ex2_B
 {
 public:
     void test() {
+        cout << "Ex2.b Sorting(unique numbers)| ";
         // Инициализируем генератор случайных чисел
         std::srand(static_cast<unsigned int>(std::time(nullptr)));
 
@@ -101,10 +103,11 @@ public:
     }
 };
 
-class ex2_c
+class Ex2_C
 {
 public:
     void test() {
+        cout << "Ex2.c Sorting(unique numbers)| ";
         // Инициализируем генератор случайных чисел
         std::srand(static_cast<unsigned int>(std::time(nullptr)));
 
