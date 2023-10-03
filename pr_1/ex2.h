@@ -10,7 +10,7 @@ using namespace std;
 class Ex2_A
 {
 public:
-    void test() {
+    Ex2_A() {
         cout << "Ex2.a Sorting(unique numbers)| ";
         // Инициализируем генератор случайных чисел
         srand(static_cast<unsigned int>(time(nullptr)));
@@ -58,7 +58,7 @@ public:
 class Ex2_B
 {
 public:
-    void test() {
+    Ex2_B() {
         cout << "Ex2.b Sorting(unique numbers)| ";
         // Инициализируем генератор случайных чисел
         std::srand(static_cast<unsigned int>(std::time(nullptr)));
@@ -106,7 +106,7 @@ public:
 class Ex2_C
 {
 public:
-    void test() {
+    Ex2_C() {
         cout << "Ex2.c Sorting(unique numbers)| ";
         // Инициализируем генератор случайных чисел
         std::srand(static_cast<unsigned int>(std::time(nullptr)));

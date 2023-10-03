@@ -8,7 +8,8 @@ using namespace std;
 
 class Ex1_C
 {
-public: static void test() {
+public:
+    Ex1_C() {
         cout << "Ex1.c | ";
         unsigned int x = 25;
         const int n = sizeof(int)*8;
@@ -26,7 +27,7 @@ class Ex1_B
 {
 public:
     int number{};
-    void test() {
+    Ex1_B() {
         cout << "Ex1.b | ";
         cout << "enter number(changing 7th bit of the digit to 1): ";
         cin >> number;
@@ -39,7 +40,7 @@ class Ex1_A
 {
 public:
     int number{};
-    void test() {
+    Ex1_A() {
         cout << "Ex1.a | ";
         cout << "enter number(changing 5th bit of the digit to 0): ";
         cin >> number;
